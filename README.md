@@ -20,7 +20,7 @@ This project will completely be in Python.
 
 ## Required Packages
 GoogleFinance
-YahooFinance
+### YahooFinanceFix : https://pypi.python.org/pypi/fix-yahoo-finance
 Zipline
 ScikitLearn
 Numpy
