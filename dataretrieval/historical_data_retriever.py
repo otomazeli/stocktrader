@@ -6,7 +6,6 @@ from datetime import datetime, timedelta
 from data_retriever import DataRetriever
 
 class HistoricalDataRetriever(DataRetriever):
-
     def __init__(self, path) :
         self.data_path = path
         self.bkk_stock_prefix = ".BK"
@@ -16,7 +15,6 @@ class HistoricalDataRetriever(DataRetriever):
         self.__read_from_yahoo(stock_name, num_days)
 
     def __read_from_yahoo(self, stock_name, num_days) :
-
         bkk_stock_name = stock_name + self.bkk_stock_prefix
 
         end_date = datetime.date.today()
@@ -31,4 +29,3 @@ class HistoricalDataRetriever(DataRetriever):
     #Implement data reading from Siamchart.com
     def __read_from_siamchart(self) :
         pass
-    
