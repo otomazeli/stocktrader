@@ -9,7 +9,7 @@ class HistoricalDataRetriever(DataRetriever):
     def __init__(self) :
         self.bkk_stock_suffix = ".BK"
 
-    def read_data_as_dataframe(self, stock_name, num_days = 90,
+    def read_data_as_dataframe(self, stock_name, num_days = 400,
                                source = 'yahoo') :
         return self.__read_from_yahoo(stock_name, num_days)
 

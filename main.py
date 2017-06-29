@@ -4,8 +4,8 @@ from dataprocessing.historical_data_processor import HistoricalDataProcessor
 def main() :
     historical_data_reader = HistoricalDataRetriever()
     historical_data_processor = HistoricalDataProcessor()
-    stock_data = historical_data_reader.read_data_as_dataframe(stock_name = 'BEC')
+    stock_data = historical_data_reader.read_data_as_dataframe(stock_name = 'THAI')
     final_data = historical_data_processor.transform_data(stock_data)
-    print(final_data)
+    print(final_data.loc['2016-07-04':])
 
 main()
