@@ -3,12 +3,6 @@ import pandas as pd
 class TechnicalCalculator :
     def __init__(self) :
         pass
-    """
-    Simple Moving Average (MA):
-    It is the simple statistical mean of previous n day closing price,
-    that normally smoothies out the price values.
-    In this study value of t is set to 25.
-    """
 
     def calculate_moving_average(self, x, type='valid', n = 25):
         x = np.asarray(x)
